@@ -6,7 +6,7 @@ const useAllPayment = () => {
      const {data:allPayment=[], refetch}=useQuery({
         queryKey:["trx"],
         queryFn:async()=>{
-             const res = await axios.get('https://win-bdt-server-new.vercel.app/trx');
+             const res = await axios.get('https://win-bdt-server-new.vercel.app/trxs');
              return res.data
         }
      })
